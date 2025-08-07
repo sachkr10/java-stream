@@ -26,8 +26,15 @@ Interview Question
 23) Explain set interface
 24) What is navigable set interface
 25) Hashmap with multithreading environment questions
-26) difference between notify and notify all
+26) Difference between notify and notify all
 27) When to use notify and when to use notify all real-time scenario
-28) how to make a thread wait for 10 seconds and resume its operation
-29) how to copy or move a object to a text file or excel file
-30) in serializable object, there a method which is not serialized, we are trying to serialize that method then what will happen
+28) How to make a thread wait for 10 seconds and resume its operation
+29) How to copy or move a object to a text file or excel file
+30) In Serializable Object, there a method which is not serialized, we are trying to serialize that method then what will happen
+31) Difference between Collection(Interface, Parent of List, Set , Map interface) and Collections(Utility Class)
+32) equals() & hashCode()
+33) OOPs concept
+34) Exception Handling Types(Checked versues unchecked), Custom Exception
+35) Creational Design Pattern(Code Singelton and Abstract Design pattern, will push the code in git)
+36) Stream Coding(Already Pushed)
+37)  
