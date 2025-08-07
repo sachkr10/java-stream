@@ -7,6 +7,7 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -104,6 +105,28 @@ public class FirstSetOfQuestion {
 		String reversed14 = Arrays.stream(sentence14.split(" "))
 				.map(word -> new StringBuilder(word).reverse().toString()).collect(Collectors.joining(" "));
 		System.out.println(reversed14);
+		/*
+		 * JP Morgan Stream interview questions
+		 */
+		System.out.println("15. Remove empty strings...");
+		String[] input15 = {"Java","","Hello","","world"};
+	    String[] output15 = Arrays.stream(input15).filter(n ->!n.isEmpty())
+		.toArray(String[]::new);
+	    System.out.println(Arrays.toString(output15));
+	
+	System.out.println("16. Remove empty and blank strings...");
+	String[] input16 = {"Java","","Hello"," ","world"};
+	String[] output16=   Arrays.stream(input16).filter(s -> !s.isBlank())
+	   .toArray(String[]::new);
+	System.out.println(Arrays.toString(output16));
+	
+	System.out.println("17. Remove empty and blank and nullelements strings...");
+	String[] input17 = {"Java","","Hello"," ",null,"world"};
+	String[] output17=   Arrays.stream(input17).filter(Objects::nonNull).filter(s -> !s.isBlank())
+	   .toArray(String[]::new);
+	System.out.println(Arrays.toString(output17));
+		
+		
 
 	}
 }
